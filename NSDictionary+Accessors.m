@@ -178,7 +178,7 @@
 
 - (NSString *)numberStringForKey:(NSString *)key
 {
-    return [self stringForKey:key]?:@"0";
+    return [[self numberForKey:key] stringValue]?:@"0";
 }
 
 @end
