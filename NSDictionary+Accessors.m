@@ -176,4 +176,9 @@
     return NO;
 }
 
+- (NSString *)numberStringForKey:(NSString *)key
+{
+    return [[self numberForKey:key] stringValue];
+}
+
 @end
